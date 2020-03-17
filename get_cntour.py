@@ -8,8 +8,7 @@ response=requests.get(url)
 
 
 soup=BeautifulSoup(response.text,'lxml')
-data=soup.select("#main > div >div.mtop.firstmod.clearfix > div.leftBox"
-                 "div:nth-child(2) > ul > li:nth-child(2) > a")
+data=soup.select("#main > div > div.mtop.firstMod.clearfix > div.leftBox > div:nth-child(3) > ul > li:nth-child(2) > a")
 print(data)
 
 for item in data:
